@@ -2,7 +2,7 @@ import { Text, TouchableOpacity, StyleSheet } from 'react-native';
 import React from 'react';
 import style_welcome from '../styles/style_welcome';
 
-const LoginButton = (props) => {
+const SignupButton = (props) => {
     // const filledBgColor = props.color || COLORS.primary;
     // const outlinedColor = COLORS.white;
     // const bgColor = props.filled ? filledBgColor : outlinedColor;
@@ -10,10 +10,10 @@ const LoginButton = (props) => {
 
     return (
         <TouchableOpacity
-            style={style_welcome.login_button}
+            style={style_welcome.signup_button}
             onPress={props.onPress}
         >
-            <Text style={style_welcome.login_button_text}>{props.title}</Text>
+            <Text style={style_welcome.signup_button_text}>{props.title}</Text>
         </TouchableOpacity>
     )
 }
@@ -29,4 +29,4 @@ const LoginButton = (props) => {
 //         justifyContent: 'center'
 //     }
 // })
-export default LoginButton
+export default SignupButton

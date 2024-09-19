@@ -87,20 +87,13 @@ const style_welcome=StyleSheet.create({
     
         contain1: { 
             flex: 1,
-            // borderColor: "red",
-            // borderBottomWidth: 21,
-            // borderTopWidth: 21,
-            // borderRightWidth: 20,
-            // borderLeftWidth: 20,
-            // backgroundColor: "#98B3E1",
+            backgroundColor: "#98B3E1",
             height: "100vh"
         },
     
         content: {
-            paddingHorizontal: 2,
-            top: "5%",
-            width: "90%",
-            borderColor: "gold",
+            width: "95%",
+            borderColor: "transparent",
             borderBottomWidth: 2,
             borderTopWidth: 2,
             borderRightWidth: 2,
@@ -108,55 +101,31 @@ const style_welcome=StyleSheet.create({
             margin: "auto"
         },
 
+
         app_container_alignment: {
-            width: "fit-content",
-            borderColor: "black",
+            width: "194px",
+            borderColor: "transparent",
             borderBottomWidth: 2,
             borderTopWidth: 2,
             borderRightWidth: 2,
             borderLeftWidth: 2,
             margin: "auto",
+            marginBottom: "10%"
         },
 
-        text_alignment: {
-            textAlign:"center"
-        },
-    
         welcomeText1: {
-            fontSize: 22,
+            textAlign:"center",
             fontWeight: "bold",
-            color: COLORS.black, 
-            borderColor: "red",
-            borderBottomWidth: 2,
-            borderTopWidth: 2,
-            borderRightWidth: 2,
-            borderLeftWidth: 2,
+            fontSize:40
         },
-    
-        welcomeText2: {
-            fontSize: 16,
-            // fontWeight: 800,
-            color: COLORS.white, 
-            borderColor: "red",
-            borderBottomWidth: 2,
-            borderTopWidth: 2,
-            borderRightWidth: 2,
-            borderLeftWidth: 2,
+        
+        text_alignment: {
+            textAlign:"center",
         },
-    
-        button: {
-            marginTop: 22,
-            width: "100%",
-            borderColor: "red",
-            borderBottomWidth: 2,
-            borderTopWidth: 2,
-            borderRightWidth: 2,
-            borderLeftWidth: 2,
-        },
-
+   
         btn_container: {
-            width: "100%",
-            borderColor: "black",
+            width: "80%",
+            borderColor: "transparent",
             borderBottomWidth: 2,
             borderTopWidth: 2,
             borderRightWidth: 2,
@@ -166,40 +135,46 @@ const style_welcome=StyleSheet.create({
 
        login_button: {
             backgroundColor:"#407CE2",
-            color:COLORS.white,
+            borderColor: "#407CE2",
             width: "100%",
             height: "56px",
-            // borderTopEndRadius: "32px",
-            // borderTopRightRadius: "32px",
-            // borderTopLeftRadius:"32px",
-            // borderTopStartRadius: "32px",
-            // borderBottomEndRadius: "32px",
-            // borderBottomRightRadius: "32px",
-            // borderBottomLeftRadius:"32px",
-            // borderBottomStartRadius: "32px",
             marginBottom:"5%",
+            paddingBottom: 18,
+            paddingVertical: 18,
+            borderWidth: 2,
+            borderRadius: 32,
+            alignItems: 'center',
+            justifyContent: 'center'            
+        },
+
+        login_button_text: {
+            color:COLORS.white,
+            fontSize: 20,
+            fontWeight: "bold",
         },
 
         
       signup_button: {
         backgroundColor:"transparent",
+        borderColor: "#407CE2",
         width: "100%",
         height: "56px",
-        // borderTopEndRadius: "32px",
-        // borderTopRightRadius: "32px",
-        // borderTopLeftRadius:"32px",
-        // borderTopStartRadius: "32px",
-        // borderBottomEndRadius: "32px",
-        // borderBottomRightRadius: "32px",
-        // borderBottomLeftRadius:"32px",
-        // borderBottomStartRadius: "32px",
+        marginBottom:"5%",
+        paddingBottom: 18,
+        paddingVertical: 18,
+        borderWidth: 2,
+        borderRadius: 32,
+        alignItems: 'center',
+        justifyContent: 'center'   
     },
 
-        // welcome_page_signup_button:{
-        //     backgroundColor:"transparent",
-        //     color: "#407CE2",
-        // }
-    
+
+    signup_button_text : {
+        color:"#407CE2",
+        fontSize: 20,
+        fontWeight: "bold",
+    },
+
 
     
 
