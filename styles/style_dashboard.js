@@ -5,7 +5,6 @@ const style_dashboard=StyleSheet.create({
 
 
     container: {
-        borderColor: "red",
         borderWidth: 10,
     }
 

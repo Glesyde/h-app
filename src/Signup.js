@@ -90,7 +90,7 @@ const Signup = ({ navigation }) => {
 
             <DropdownComponent/>
 
-            <View style={style_account_entry.textInputContainer}>
+            {/* <View style={style_account_entry.textInputContainer}>
 
                 <View style={style_account_entry.inputIconContainer}>
                     <Groups/>
@@ -107,7 +107,7 @@ const Signup = ({ navigation }) => {
 
                 </View>
 
-            </View>
+            </View> */}
 
             <View style={style_account_entry.textInputContainer}>
 

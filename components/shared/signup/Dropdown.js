@@ -1,49 +1,41 @@
 import React, { useState } from 'react';
   import { StyleSheet, Text, View } from 'react-native';
   import { Dropdown } from 'react-native-element-dropdown';
-  import AntDesign from '@expo/vector-icons/AntDesign';
+//   import AntDesign from '@expo/vector-icons/AntDesign';
+  import { accountCategory } from '../../../data';
+  import Groups from "../../../assets/icons/groups-1.svg";
 
-  const data = [
-    { label: 'Item 1', value: '1' },
-    { label: 'Item 2', value: '2' },
-    { label: 'Item 3', value: '3' },
-    { label: 'Item 4', value: '4' },
-    { label: 'Item 5', value: '5' },
-    { label: 'Item 6', value: '6' },
-    { label: 'Item 7', value: '7' },
-    { label: 'Item 8', value: '8' },
-  ];
 
   const DropdownComponent = () => {
     const [value, setValue] = useState(null);
     const [isFocus, setIsFocus] = useState(false);
 
-    const renderLabel = () => {
-      if (value || isFocus) {
-        return (
-          <Text style={[styles.label, isFocus && { color: 'red' }]}>
-            Dropdown label
-          </Text>
-        );
-      }
-      return null;
-    };
+    // const renderLabel = () => {
+    //   if (value || isFocus) {
+    //     return (
+    //       <Text style={[styles.label, isFocus && { color: 'red' }]}>
+    //         Dropdown label
+    //       </Text>
+    //     );
+    //   }
+    //   return null;
+    // };
 
     return (
       <View style={styles.container}>
-        {renderLabel()}
+        {/* {renderLabel()} */}
         <Dropdown
           style={[styles.dropdown, isFocus && { borderColor: 'red' }]}
           placeholderStyle={styles.placeholderStyle}
           selectedTextStyle={styles.selectedTextStyle}
           inputSearchStyle={styles.inputSearchStyle}
           iconStyle={styles.iconStyle}
-          data={data}
+          data={accountCategory}
           search
           maxHeight={300}
           labelField="label"
           valueField="value"
-          placeholder={!isFocus ? 'Select item' : '...'}
+          placeholder={!isFocus ? 'Select your category' : '...'}
           searchPlaceholder="Search..."
           value={value}
           onFocus={() => setIsFocus(true)}
@@ -52,15 +44,22 @@ import React, { useState } from 'react';
             setValue(item.value);
             setIsFocus(false);
           }}
+        //   renderLeftIcon={() => (
+        //     <AntDesign
+        //       style={styles.icon}
+        //       color={isFocus ? 'red' : 'black'}
+        //       name="Safety"
+        //       size={20}
+        //     />
+        //   )}
+
           renderLeftIcon={() => (
-            <AntDesign
-              style={styles.icon}
-              color={isFocus ? 'red' : 'black'}
-              name="Safety"
-              size={20}
-            />
+            <Groups style={styles.icon}/>
           )}
+
         />
+
+
       </View>
     );
   };
@@ -69,33 +68,40 @@ import React, { useState } from 'react';
 
   const styles = StyleSheet.create({
     container: {
-      backgroundColor: 'white',
-      padding: 16,
+      backgroundColor: 'red',
+    //   padding: 16,
+        marginBottom: 20,
+        height: 56, 
+        borderColor:  "#221F1F",
+        borderWidth: 1,
+        borderRadius: 8,
+        backgroundColor: "#F9FAFB",
     },
     dropdown: {
-      height: 50,
-      borderColor: 'gray',
-      borderWidth: 0.5,
+      height: 56,
+    //   borderColor: 'gray',
+    //   borderWidth: 0.5,
       borderRadius: 8,
       paddingHorizontal: 8,
     },
     icon: {
-      marginRight: 5,
+      marginRight: 20,
+      marginLeft: 15,
     },
     label: {
       position: 'absolute',
       backgroundColor: 'white',
-      left: 22,
+      left: 42,
       top: 8,
       zIndex: 999,
       paddingHorizontal: 8,
       fontSize: 14,
     },
     placeholderStyle: {
-      fontSize: 16,
+      fontSize: 18,
     },
     selectedTextStyle: {
-      fontSize: 16,
+      fontSize: 18,
     },
     iconStyle: {
       width: 20,

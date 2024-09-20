@@ -48,7 +48,7 @@ const Login = () => {
                 <View style={style_account_entry.textInputTypeContainer}>
 
                     <TextInput
-                        placeholder='Enter your email'
+                        placeholder='Enter your email or phone-number'
                         placeholderTextColor={COLORS.black}
                         keyboardType='email-address'
                         style={style_account_entry.textInputType}
@@ -128,10 +128,10 @@ const Login = () => {
                 </View>
 
                 <Button 
-                title="Sign in"  
-                style={style_account_entry.loginBtn}
-                onPress={() => navigation.navigate("Dashboard")}
-                // onPress={()=> loginUser(email,password)}
+                    title="Sign in"  
+                    style={style_account_entry.loginBtn}
+                    onPress={() => navigation.navigate("Dashboard")}
+                    // onPress={()=> loginUser(email,password)}
                 />
 
                 <View style={style_account_entry.otheroptions}>
