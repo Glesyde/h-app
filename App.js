@@ -1,6 +1,6 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
-import { Login, Signup, Welcome, Dashboard } from "./src";
+import { Login, Signup, Welcome, Dashboard } from "./screen";
 // import Layout from "./src/app/_layout";
 
 const Stack = createNativeStackNavigator();
@@ -47,7 +47,7 @@ export default function App() {
         name="Dashboard"
         component={Dashboard}
         options={{
-          headerShown: true,
+          headerShown: false,
           headerStyle: {
             height: 150,
             borderBottomLeftRadius: 50,

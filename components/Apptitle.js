@@ -2,28 +2,33 @@ import { Text, View, BackHandler, Alert, TouchableOpacity } from 'react-native';
 import React, { useEffect } from 'react';
 import style_app_title from '../styles/shared/style_app_title';
 import ArrowLeft from '../assets/icons/arrow-left.svg';
+import { useNavigation } from 'expo-router';
 
 const Apptitle = (property) => {
 
-  useEffect(()=> {
-    const backAction = () => {
-      Alert.alert("Are you sure you want to go back.", [
-        {
-          text: "Cancel",
-          onPress: ()=>null,
-          style:"cancel"
-        },
-        {
-          text: "Yes",
-          onPress:()=>BackHandler.exitApp()
-        }
-      ]);
-      return true;   
-    }
+  const navigation = useNavigation();
 
-    const backHandler = BackHandler.addEventListener("hardwareBackPress",backAction)
+  // useEffect(()=> {
+  //   const backAction = () => {
+  //     Alert.alert("Are you sure you want to go back.", [
+  //       {
+  //         text: "Cancel",
+  //         onPress: ()=>null,
+  //         style:"cancel"
+  //       },
+  //       {
+  //         text: "Yes",
+  //         onPress:()=>BackHandler.exitApp()
+  //       }
+  //     ]);
+  //     return true;   
+  //   }
 
-  },[])
+  //   const backHandler = BackHandler.addEventListener("hardwareBackPress",backAction)
+
+  // },[])
+
+  
 
 
   return (
@@ -35,7 +40,7 @@ const Apptitle = (property) => {
           <View style={style_app_title.arrowBorder}>
 
             <TouchableOpacity 
-            onPress={this.backButton}
+            onPress={()=> navigation.goBack}
             
             >
               <ArrowLeft style={style_app_title.leftArrow}/>

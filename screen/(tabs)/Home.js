@@ -1,9 +1,10 @@
 import { Text, View, TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import style_dashboard from '../../styles/style_dashboard';
+import PatientScreen from '../../components/patient/Home'; 
 
 
-const Profile = () => {
+const Home = () => {
   
   const navigation = useNavigation();
 
@@ -15,13 +16,15 @@ const Profile = () => {
               <TouchableOpacity
               onPress={()=>navigation.navigate("Welcome")}
               >
-                <Text> Profile Page</Text>
+                <Text> Patient Dashboard </Text>
+               
               </TouchableOpacity>
         </View>
 
 
         <View style={style_dashboard.container}>
 
+          <PatientScreen/>
 
         </View>
 
@@ -30,4 +33,4 @@ const Profile = () => {
   )
 }
 
-export default Profile 
+export default Home
