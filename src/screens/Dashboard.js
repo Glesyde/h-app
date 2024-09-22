@@ -39,7 +39,7 @@
 
 // import { useNavigation,View  } from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {Home, Reports, Notification, Profile} from './(tabs)';
+import {Home, Reports, Notification, Profile} from './tabs';
 // import { Entypo } from '@expo/vector-icons';
 // import Report from "../assets/icons/reports.svg"
 // import style_dashboard from '../styles/style_dashboard';
@@ -94,25 +94,25 @@ function TabBarIcon(name,color,isActive) {
 const Tab = createBottomTabNavigator();
 
 
-// const screenOptions = {
-//   tabBarShowLabel: true,
-//   headerShown: false,
-//   tabBarStyle: {
-//     position: "",
-//     bottom: 0,
-//     top: 0,
-//     right: 0,
-//     left: 0,
-//     elevation: 0,
-//     height: 80,
-//     // background: "gold",
-//     // borderColor: "gold",
-//     // borderBottomWidth: 2,
-//     // borderTopWidth: 2,
-//     // borderRightWidth: 2,
-//     // borderLeftWidth: 2,
-//   }
-// }
+const screenOptions = {
+  tabBarShowLabel: true,
+  headerShown: false,
+  tabBarStyle: {
+    position: "",
+    bottom: 0,
+    top: 0,
+    right: 0,
+    left: 0,
+    elevation: 0,
+    height: 80,
+    // background: "gold",
+    // borderColor: "gold",
+    // borderBottomWidth: 2,
+    // borderTopWidth: 2,
+    // borderRightWidth: 2,
+    // borderLeftWidth: 2,
+  }
+}
 
 const Dashboard = () => {
 
@@ -125,19 +125,19 @@ const Dashboard = () => {
             <Tab.Navigator 
             
             
-            // screenOptions={screenOptions}
+            screenOptions={screenOptions}
 
-            screenOptions={{
-              tabBarActiveTintColor: "#a01cfe",
-              tabBarStyle: {
-                backgroundColor: "white",
-                height: 80,
-                marginHorizontal: -10,
-                borderTopWidth: 2,
-                borderTopColor: "white",
-              },
+            // screenOptions={{
+            //   tabBarActiveTintColor: "#a01cfe",
+            //   tabBarStyle: {
+            //     backgroundColor: "white",
+            //     height: 80,
+            //     marginHorizontal: -10,
+            //     borderTopWidth: 2,
+            //     borderTopColor: "white",
+            //   },
 
-            }}
+            // }}
             
             
             

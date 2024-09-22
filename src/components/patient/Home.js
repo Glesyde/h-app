@@ -3,6 +3,7 @@ import Telescope from '../../assets/icons/telescope.svg';
 import Doctor from '../../assets/icons/doctor.svg';
 import Pharmacy from '../../assets/icons/pharmacy.svg';
 import Ambulance from '../../assets/icons/ambulance.svg';
+import { useNavigation } from '@react-navigation/native';
 // import { blogData } from '../../data';
 import PatientBlog from './component/Blog';
 // import { Link } from 'expo-router';
@@ -15,10 +16,10 @@ import {
   SafeAreaView,
 } from 'react-native';
 import style_patient_home from '../../styles/shared/style_patient_home';
-import { blogData } from '../../data';
 
 const PatientScreen = () => {
 
+    const navigation = useNavigation();
 
   return (
 
@@ -44,7 +45,7 @@ const PatientScreen = () => {
 
                     <View style={style_patient_home.userNameContainer}>
                     
-                        <Text style={style_patient_home.patientName}>Welcome Wisdom 👋</Text>
+                        <Text style={style_patient_home.patientName}>Welcome Wisdom! 👋</Text>
         
                     </View>
 
@@ -56,7 +57,7 @@ const PatientScreen = () => {
                         </View>
                         
                         <View style={style_patient_home.patientCtaBtn}>
-                            <TouchableOpacity><Text style={style_patient_home.consult_doctor}>Consult a doctor</Text></TouchableOpacity>
+                            <TouchableOpacity onPress={()=> navigation.navigate("../app/patient/Doctor")}><Text style={style_patient_home.consult_doctor}>Consult a doctor</Text></TouchableOpacity>
                         </View>
 
                     </View>

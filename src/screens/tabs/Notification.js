@@ -8,7 +8,7 @@ const Notification = () => {
   const navigation = useNavigation();
 
   return (
-    <View>
+    <View style={style_dashboard.container}>
 
 
         <View id="logout-container">
@@ -20,7 +20,7 @@ const Notification = () => {
         </View>
 
 
-        <View style={style_dashboard.container}>
+        <View>
 
 
         </View>

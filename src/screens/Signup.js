@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { Image, Pressable, Text, TextInput, TouchableOpacity, View, ScrollView } from 'react-native';
 import DropdownComponent from "../components/shared/signup/Dropdown";
 import Button from '../components/Button';
-import COLORS from '../constants/colors';
+import COLORS from '../utils/colors';
 import style_account_entry from '../styles/style_account_entry';
 import User from "../assets/icons/user-1.svg";
 import Email from "../assets/icons/email.svg";

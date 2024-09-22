@@ -1,5 +1,9 @@
-import { Text, View, BackHandler, Alert, TouchableOpacity } from 'react-native';
-import React, { useEffect } from 'react';
+// import { Text, View, BackHandler, Alert, TouchableOpacity } from 'react-native';
+// import React, { useEffect } from 'react';
+
+
+import { Text, View, TouchableOpacity } from 'react-native';
+import React from 'react';
 import style_app_title from '../styles/shared/style_app_title';
 import ArrowLeft from '../assets/icons/arrow-left.svg';
 import { useNavigation } from 'expo-router';
@@ -60,7 +64,7 @@ const Apptitle = (property) => {
   )
 }
 
-export default Apptitle
+export default Apptitle;
 
 
 

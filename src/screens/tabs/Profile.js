@@ -9,7 +9,7 @@ const Profile = () => {
   const navigation = useNavigation();
 
   return (
-    <View>
+    <View style={style_dashboard.container}>
 
 
         <View id="logout-container">
@@ -21,7 +21,7 @@ const Profile = () => {
         </View>
 
 
-        <View style={style_dashboard.container}>
+        <View>
 
         <ProfileScreen/>
         </View>

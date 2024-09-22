@@ -35,7 +35,6 @@ const style_patient_home = StyleSheet.create({
     },
 
     patientBtnWrapper: {
-      width: '90%',
       display: 'flex',
       borderRadius: 24,
       backgroundColor: '#407CE2',
@@ -47,11 +46,14 @@ const style_patient_home = StyleSheet.create({
     },
   
     patientCtaIconContainer: {
-        width: '30%',
+      borderWidth: 5,
+      borderColor: "transparent"
     },
 
     patientCtaIcon: {
-        margin: "auto"
+      borderColor: "red",
+      borderWidth: 2,
+      margin: "auto"
     },
 
     patientCtaBtn: {
@@ -59,7 +61,6 @@ const style_patient_home = StyleSheet.create({
       textAlign: 'center',
       justifyContent: 'center',
       fontSize: 13,
-      width: '80%',
       textAlign: "left"
     },
 
@@ -69,9 +70,8 @@ const style_patient_home = StyleSheet.create({
 
 
     moduleContainer: {
-        borderColor:"red",
+        borderColor:"transparent",
         borderWidth: 10,
-        width: 450,
         height: 108,
         borderTopRightRadius: 28,
         borderTopLeftRadius: 28,

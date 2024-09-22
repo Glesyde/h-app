@@ -3,7 +3,7 @@ import style_welcome from '../styles/style_welcome';
 import { View, Text, TouchableOpacity, Pressable, Image } from 'react-native'
 import React from 'react'
 import { LinearGradient } from "expo-linear-gradient";
-import COLORS from '../constants/colors';
+import COLORS from '../utils/colors';
 import LoginButton from '../components/Button';
 import SignupButton from '../components/Button-signup';
 // import Medicine1 from '../assets/icons/onboarding/medicine3.svg';

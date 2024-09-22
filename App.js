@@ -1,6 +1,7 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
-import { Login, Signup, Welcome, Dashboard } from "./screen";
+import { Login, Signup, Welcome, Dashboard } from "./src/screens";
+// import PatientDoctor from './screen/app/patient/Doctor';
 // import Layout from "./src/app/_layout";
 
 const Stack = createNativeStackNavigator();
@@ -58,6 +59,22 @@ export default function App() {
           }
           }}
         />
+
+        {/* <Stack.Screen
+        name="Doctor"
+        component={PatientDoctor}
+        options={{
+          headerShown: false,
+          headerStyle: {
+            height: 150,
+            borderBottomLeftRadius: 50,
+            borderBottomRightRadius: 50,
+            backgroundColor: "#98B3E1",
+            shdowColor: "#000",
+            elevation: 25,
+          }
+          }}
+        /> */}
 
 
 

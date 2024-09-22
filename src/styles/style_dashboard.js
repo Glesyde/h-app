@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import COLORS from "../constants/colors";
+// import COLORS from "../utils/colors";
 
 const style_dashboard=StyleSheet.create({
 
@@ -7,6 +7,7 @@ const style_dashboard=StyleSheet.create({
     container: {
         borderColor: "transparent",
         borderWidth: 10,
+        marginTop: 100
     }
 
     

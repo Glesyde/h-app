@@ -3,7 +3,7 @@ import { Text, Dimensions, StyleSheet, View } from 'react-native';
 import { SwiperFlatList } from 'react-native-swiper-flatlist';
 
 
-const colors = ['tomato', 'thistle', 'skyblue', 'teal'];
+const colors = ['Stay Fit and Live Long', 'Healthy Application', 'Contact Our Doctor', 'Check your Pateint Health'];
 
 const PatientBlog = () => (
   <View style={styles.container}>
@@ -25,9 +25,8 @@ const PatientBlog = () => (
 
 const { width } = Dimensions.get('window');
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: 'white' },
-  child: { width, justifyContent: 'center' },
-  text: { fontSize: width * 0.5, textAlign: 'center' },
+  container: { flex: 1, backgroundColor: 'white', height: 200 },
+  text: { fontSize: width * 0.1, textAlign: 'center', margin: "auto", marginTop:0  },
 });
 
 
