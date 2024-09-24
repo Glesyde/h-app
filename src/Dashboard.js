@@ -16,6 +16,12 @@ const Dashboard = () => {
               >
                 <Text> Patient Dashboard you can click here to Logout</Text>
               </TouchableOpacity>
+
+              <TouchableOpacity 
+                onPress={()=> navigation.navigate('doctorAppointment')}
+              >
+                <Text style={{fontSize:40}}>Appoinment</Text>
+              </TouchableOpacity>
         </View>
 
 

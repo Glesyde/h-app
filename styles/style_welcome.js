@@ -87,7 +87,7 @@ const style_welcome=StyleSheet.create({
     
         contain1: { 
             flex: 1,
-            backgroundColor: "#98B3E1",
+            backgroundColor: 'rgba(228, 235, 247, 0.7)',  // Semi-transparent overlay
             height: "100vh"
         },
     
@@ -115,8 +115,12 @@ const style_welcome=StyleSheet.create({
 
         welcomeText1: {
             textAlign:"center",
-            fontWeight: "bold",
-            fontSize:40
+            fontSize:40,
+            fontFamily: 'bold',
+        },
+
+        welcomeText2:{
+            fontFamily: 'regular'
         },
         
         text_alignment: {
@@ -150,7 +154,7 @@ const style_welcome=StyleSheet.create({
         login_button_text: {
             color:COLORS.white,
             fontSize: 20,
-            fontWeight: "bold",
+            fontFamily: "bold",
         },
 
         
@@ -172,7 +176,7 @@ const style_welcome=StyleSheet.create({
     signup_button_text : {
         color:"#407CE2",
         fontSize: 20,
-        fontWeight: "bold",
+        fontFamily: "bold",
     },
 
 

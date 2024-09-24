@@ -1,6 +1,6 @@
 
 import style_welcome from '../styles/style_welcome';
-import { View, Text, TouchableOpacity, Pressable, Image } from 'react-native'
+import { View, Text, TouchableOpacity, Pressable, Image, ImageBackground } from 'react-native'
 import React from 'react'
 import { LinearGradient } from "expo-linear-gradient";
 import COLORS from '../constants/colors';
@@ -15,7 +15,11 @@ import AppLogo from '../assets/icons/onboarding/app_logo.svg';
 const Welcome = ({ navigation }) => {
 
     return (
-        <LinearGradient style={style_welcome.container}colors={[COLORS.secondary, COLORS.primary]}>
+        <ImageBackground 
+            style={style_welcome.container}
+            source={require('../assets/icons/onboarding/bg.png')}
+            resizeMode='cover'    
+        >
 
             <View className="bg-transparent-600" style={style_welcome.contain1}>
 
@@ -74,7 +78,7 @@ const Welcome = ({ navigation }) => {
 
 
 
-        </LinearGradient>
+        </ImageBackground>
     )
 }
 
